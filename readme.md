@@ -8,7 +8,7 @@ If you use any browser but Firefox, refer [here](https://github.com/sindresorhus
 
 ## Install
 
-- **Firefox** add-on: Coming soon!
+- **Firefox** add-on: Get it here: https://addons.mozilla.org/en-US/firefox/addon/reimagined-twitter/
 
 
 ## Highlights
