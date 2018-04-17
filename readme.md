@@ -2,7 +2,7 @@
 
 > Browser extension that simplifies the Twitter interface and adds useful features for Firefox
 
-This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project will tweak a few things (because people have differing tastes) and will be a Firefox Addon.
+This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project will tweak a few things (because people have differing tastes) and is be a Firefox Addon.
 
 If you use any browser but Firefox, refer [here](https://github.com/sindresorhus/refined-twitter)
 
@@ -28,7 +28,7 @@ If you use any browser but Firefox, refer [here](https://github.com/sindresorhus
 - Prevents DM modal from closing when (accidentally) clicking outside the modal.
 - Highlight your mentions in the stream
 - [Adds a `Likes` button to the main navbar](https://user-images.githubusercontent.com/14620121/35988497-ace9f93e-0ce5-11e8-8675-17e6ee38cd99.png)
-- Keyboard shortcut to toggle Night Mode (<kbd>Ctrl</kbd><kbd>m</kbd>).
+- Keyboard shortcut to toggle Night Mode (<kbd>Alt</kbd><kbd>m</kbd>).
 
 Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-twitter/issues/10) and you can toggle it using <kbd>Ctrl</kbd><kbd>m</kbd>. And press <kbd>Shift</kbd> <kbd>?</kbd> to see all keyboard shortcuts.
 
@@ -37,8 +37,7 @@ Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-tw
 
 ## Customization
 
-We are happy for suggestions and contributions, and this project has lower bars than Refined Twitter does. But there are things that won't be changed.
-
+We are happy for suggestions and contributions. But there are things that won't be changed.
 
 This doesn't necessarily limit you from manually disabling functionality that is not useful for you. Options include:
 
@@ -88,13 +87,6 @@ Once built, load it in the browser of your choice:
 		</td>
 	</tr>
 </table>
-
-
-## FAQ
-
-### Don't you have another extension with the same name?
-
-This is reusing the name from the [original Refined Twitter](https://github.com/sindresorhus/refined-twitter-old) extension, which tried to use the mobile Twitter version on the desktop. It was a good idea in theory, but not in practice. This extension instead improves upon the desktop version of Twitter.
 
 
 ## Related
