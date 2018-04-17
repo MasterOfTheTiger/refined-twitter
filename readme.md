@@ -1,17 +1,14 @@
-# <img src="source/icon.png" width="45" align="left">Refined Twitter
+# <img src="source/icon.png" width="45" align="left">Reimagined Twitter (Refined Twitter for Firefox)
 
-> Browser extension that simplifies the Twitter interface and adds useful features
+> Browser extension that simplifies the Twitter interface and adds useful features for Firefox
 
-We use Twitter a lot and notice many dumb annoyances we'd like to fix. So here be dragons.
+This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project will tweak a few things (because people have differing tastes) and is be a Firefox Addon.
 
-**Read the [blog post](https://blog.sindresorhus.com/refined-twitter-74038424fe2a) and discuss it on [Product Hunt](https://www.producthunt.com/posts/refined-twitter)**
-
+If you use any browser but Firefox, refer [here](https://github.com/sindresorhus/refined-twitter)
 
 ## Install
 
-- [**Chrome** extension](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
-- **Firefox** add-on: Use [this](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) to enable installing Chrome extensions and then install [Refined Twitter](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
-- **Opera** extension: Use [this](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/) to enable installing Chrome extensions and then install [Refined Twitter](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
+- **Firefox** add-on: Get it here: https://addons.mozilla.org/en-US/firefox/addon/reimagined-twitter/
 
 
 ## Highlights
@@ -32,16 +29,15 @@ We use Twitter a lot and notice many dumb annoyances we'd like to fix. So here b
 - Highlight your mentions in the stream
 - [Adds a `Likes` button to the main navbar](https://user-images.githubusercontent.com/14620121/35988497-ace9f93e-0ce5-11e8-8675-17e6ee38cd99.png)
 - Keyboard shortcut to toggle Night Mode (<kbd>Alt</kbd><kbd>m</kbd>).
-- [Adds Markdown-like styling of `text wrapped in backticks`](https://user-images.githubusercontent.com/12901172/38168571-d9bd82ea-351d-11e8-9858-0d7c8993cdd3.png)
 
-Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-twitter/issues/10) and you can toggle it using <kbd>Alt</kbd><kbd>m</kbd>. And press <kbd>Shift</kbd> <kbd>?</kbd> to see all keyboard shortcuts.
+Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-twitter/issues/10) and you can toggle it using <kbd>Ctrl</kbd><kbd>m</kbd>. And press <kbd>Shift</kbd> <kbd>?</kbd> to see all keyboard shortcuts.
 
 <img src="media/screenshot.gif" width="1272">
 
 
 ## Customization
 
-We're happy to receive suggestions and contributions, but be aware this is a highly opinionated project. There's a very high bar for adding options.
+We are happy for suggestions and contributions. But there are things that won't be changed.
 
 This doesn't necessarily limit you from manually disabling functionality that is not useful for you. Options include:
 
@@ -59,8 +55,8 @@ In order to make modifications to the extension you'd need to run it locally.
 Please follow the below steps:
 
 ```sh
-git clone https://github.com/sindresorhus/refined-twitter
-cd refined-twitter
+git clone https://github.com/MasterOfTheTiger/reimagine-twitter
+cd reimagine-twitter
 npm install    # Install dev dependencies
 npm run build  # Build the extension code so it's ready for the browser
 npm run watch  # Listen for file changes and automatically rebuild
@@ -79,36 +75,33 @@ Once built, load it in the browser of your choice:
 				<li>Open <code>chrome://extensions</code>
 				<li>Check the <strong>Developer mode</strong> checkbox
 				<li>Click on the <strong>Load unpacked extension</strong> button
-				<li>Select the folder <code>refined-twitter/distribution</code>
+				<li>Select the folder <code>reimagine-twitter/extension</code>
 			</ol>
 		</td>
 		<td width="50%">
 			<ol>
 				<li>Open <code>about:debugging#addons</code>
 				<li>Click on the <strong>Load Temporary Add-on</strong> button
-				<li>Select the file <code>refined-twitter/extension/manifest.json</code>
+				<li>Select the file <code>reimagine-twitter/extension/manifest.json</code>
 			</ol>
 		</td>
 	</tr>
 </table>
 
 
-## FAQ
-
-### Don't you have another extension with the same name?
-
-This is reusing the name from the [original Refined Twitter](https://github.com/sindresorhus/refined-twitter-old) extension, which tried to use the mobile Twitter version on the desktop. It was a good idea in theory, but not in practice. This extension instead improves upon the desktop version of Twitter.
-
-
 ## Related
 
-- [Refined GitHub](https://github.com/sindresorhus/refined-github) - GitHub version of this extension
+- [Refined GitHub](https://github.com/sindresorhus/refined-github) - GitHub version of the original extension
 
 
 ## Maintainers
 
+### For Refined Twitter
 - [Sindre Sorhus](https://github.com/sindresorhus)
 - [Filipe Kiss](https://github.com/filipekiss)
+
+### For Reimagined Twitter
+- [MasterOfTheTiger](https://github.com/MasterOfTheTiger)
 
 
 ## License
