@@ -54,3 +54,23 @@ export const isModalOpen = () => {
 	const isDMModalOpen = $('#dm_dialog').is(':visible');
 	return hasPermalinkOverlay || isDMModalOpen;
 };
+
+export const isProfilePage = () => document.body.classList.contains('ProfilePage');
+
+export const isOwnProfilePage = () => isProfilePage() && document.body.classList.contains(`user-style-${getUsername()}`);
+
+export const getFromLocalStorage = value => {
+	try {
+		return browser.storage.local.get(value);
+	} catch (error) {
+		console.error(`Error while fetching ${value ? JSON.stringify(value, null, '\t') : 'everything'}: ${error}`);
+	}
+};
+
+export const setToLocalStorage = async value => {
+	try {
+		await browser.storage.local.set(value);
+	} catch (error) {
+		console.error(`Error in storing ${JSON.stringify(value, null, '\t')} to local storage: ${error}`);
+	}
+};
