@@ -76,8 +76,9 @@ Dashboard
 }
 
 /* Remove sidebars */
-.dashboard-left,
-.dashboard-right {
+/* The `:not(.wrapper-list)` part filters out Twitter lists because we don't want to hide the sidebars there */
+#page-container:not(.wrapper-list) .dashboard-left,
+#page-container:not(.wrapper-list) .dashboard-right {
 	display: none !important;
 }
 
@@ -93,14 +94,6 @@ Dashboard
 /* Custom inline image element */
 .AdaptiveMedia .refined-twitter_instagram-inline {
 	max-width: 100%;
-}
-
-/* Prevent DM Modal from closing when clicking the overlay */
-#dm_dialog {
-	pointer-events: none;
-}
-#dm_dialog-dialog {
-	pointer-events: auto;
 }
 
 /* Hide list-add activity */
@@ -145,6 +138,39 @@ code.refined-twitter_markdown {
 	font-size: 90%;
 }
 
+/* Remove big header from profile page */
+.ProfileCanopy-avatar {
+	bottom: -160px !important;
+}
+
+.ProfileSidebar--withLeftAlignment {
+	transform: translateY(130px);
+	position: relative;
+	z-index: 3;
+}
+
+.ProfileCanopy-navBar > .AppContainer {
+	position: relative;
+}
+
+.ProfileCanopy,
+.ProfileCanopy-header,
+.ProfileCanopy--large {
+	height: 0 !important;
+}
+
+/* Remove white border and add shadow to profile picture */
+.ProfileCanopy-avatar {
+	padding: 5px;
+	border-radius: 100%;
+}
+
+.ProfileAvatar,
+.ProfileAvatarEditing {
+	border: none !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.36);
+}
+
 /* Move dropdown menu to the right */
 .DashUserDropdown {
 	transform: translateX(145px);
@@ -153,3 +179,33 @@ code.refined-twitter_markdown {
 .DashUserDropdown .dropdown-caret {
 	transform: translateX(-145px);
 }
+
+/* Plugin-generated div that display the alternative text of an image */
+.refined-twitter_image-alt {
+	background-color: #fff;
+	color: #14171a;
+	padding: 0.8rem;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+.refined-twitter_image-alt_top {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.refined-twitter_image-alt_bottom {
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+.refined-twitter_image-alt_img {
+	top: 0 !important;
+	margin-top: 0 !important;
+	position: relative !important;
+}
+.refined-twitter_image-alt_container {
+	position: relative !important;
+}
+.refined-twitter_image-alt_photocontainer {
+	padding-top: 0 !important;
+}
+.refined-twitter_image-alt_ancestor-not-square {
+	max-height: initial !important;
+}
+
