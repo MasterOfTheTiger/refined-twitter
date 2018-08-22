@@ -1,26 +1,17 @@
-# <img src="source/icon.png" width="45" align="left">Refined Twitter
+# <img src="source/icon.png" width="45" align="left">Reimagined Twitter (Refined Twitter for Firefox)
 
-> Browser extension that simplifies the Twitter interface and adds useful features
+> Browser extension that simplifies the Twitter interface and adds useful features for Firefox
 
-[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo) [![Gitter](https://badges.gitter.im/join_chat.svg)](https://gitter.im/refined-twitter/Lobby)
+This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project will tweak a few things (because people have differing tastes) and is a Firefox Addon.
 
-We use Twitter a lot and notice many dumb annoyances we'd like to fix. So here be dragons.
-
-**Read the [blog post](https://blog.sindresorhus.com/refined-twitter-74038424fe2a) and discuss it on [Product Hunt](https://www.producthunt.com/posts/refined-twitter)**
-
+If you use any browser but Firefox, refer [here](https://github.com/sindresorhus/refined-twitter)
 
 ## Install
 
-- [**Chrome** extension](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
-- **Firefox** add-on: Use [this](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) to enable installing Chrome extensions and then install [Refined Twitter](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
-- **Opera** extension: Use [this](https://addons.opera.com/en/extensions/details/download-chrome-extension-9/) to enable installing Chrome extensions and then install [Refined Twitter](https://chrome.google.com/webstore/detail/refined-twitter/nlfgmdembofgodcemomfeimamihoknip)
-
-*Note: You **must** be logged in for this extension to work.*
+- **Firefox** add-on: Get it here: https://addons.mozilla.org/en-US/firefox/addon/reimagined-twitter/
 
 
 ## Highlights
-
-*You can configure many of these features in the extension settings.*
 
 - Simplified and improved UI.
 - Hides promoted tweets.
@@ -44,90 +35,22 @@ We use Twitter a lot and notice many dumb annoyances we'd like to fix. So here b
 - Hides the header image on profile pages.
 - [Shows alternative image text below images when available.](https://user-images.githubusercontent.com/170270/40556400-b46c292c-6076-11e8-8241-f5c4e1a7a161.png)
 
-Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-twitter/issues/10) and you can toggle it using <kbd>Alt</kbd><kbd>m</kbd>. And press <kbd>Shift</kbd> <kbd>?</kbd> to see all keyboard shortcuts.
+Tip: Twitter has a native [dark mode](https://github.com/sindresorhus/refined-twitter/issues/10) and you can toggle it using <kbd>Ctrl</kbd><kbd>m</kbd>. And press <kbd>Shift</kbd> <kbd>?</kbd> to see all keyboard shortcuts.
 
 <img src="media/screenshot.gif" width="1272">
 
-
-## Customization
-
-See the extension settings for what can be configured.
-
-<img src="media/screenshot-settings.png" height="500">
-
-We're happy to receive suggestions and contributions, but be aware this is an opinionated project. There's a high bar for adding options.
-
-This doesn't necessarily limit you from manually disabling functionality that is not useful for you. Options include:
-
-1. *(CSS Only)* Use a Chrome extension that allows injecting custom styles into sites, based on a URL pattern. [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) is one such tool. [Example](https://github.com/sindresorhus/refined-github/issues/136#issuecomment-204072018)
-
-2. Clone the repository, make the adjustments you need, and [load the unpacked extension in Chrome](https://developer.chrome.com/extensions/getstarted#unpacked), rather than installing from the Chrome Store.
-
-
-## Contribute
-
-Suggestions and pull requests are highly encouraged!
-
-In order to make modifications to the extension you'd need to run it locally.
-
-Please follow the below steps:
-
-```sh
-git clone https://github.com/sindresorhus/refined-twitter
-cd refined-twitter
-npm install    # Install dev dependencies
-npm run build  # Build the extension code so it's ready for the browser
-npm run watch  # Listen for file changes and automatically rebuild
-```
-
-Once built, load it in the browser of your choice:
-
-<table>
-	<tr>
-		<th>Chrome</th>
-		<th>Firefox</th>
-	</tr>
-	<tr>
-		<td width="50%">
-			<ol>
-				<li>Open <code>chrome://extensions</code>
-				<li>Check the <strong>Developer mode</strong> checkbox
-				<li>Click on the <strong>Load unpacked extension</strong> button
-				<li>Select the folder <code>refined-twitter/distribution</code>
-			</ol>
-		</td>
-		<td width="50%">
-			<ol>
-				<li>Open <code>about:debugging#addons</code>
-				<li>Click on the <strong>Load Temporary Add-on</strong> button
-				<li>Select the file <code>refined-twitter/extension/manifest.json</code>
-			</ol>
-		</td>
-	</tr>
-</table>
-
-
-## FAQ
-
-#### Don't you have another extension with the same name?
-
-This is reusing the name from the [original Refined Twitter](https://github.com/sindresorhus/refined-twitter-old) extension, which tried to use the mobile Twitter version on the desktop. It was a good idea in theory, but not in practice. This extension instead improves upon the desktop version of Twitter.
-
-#### Will this extension work if I'm not logged in?
-
-[No](https://github.com/sindresorhus/refined-twitter/issues/126).
-
-
-## Related
-
-- [Refined GitHub](https://github.com/sindresorhus/refined-github) - GitHub version of this extension
-
+## Contributing
+Please contribute upstream to refined Twitter.
 
 ## Maintainers
 
+### For Refined Twitter
 - [Sindre Sorhus](https://github.com/sindresorhus)
 - [Filipe Kiss](https://github.com/filipekiss)
 - [Jorge Gonzalez](https://github.com/jorgegonzalez)
+
+### For Reimagined Twitter
+- [MasterOfTheTiger](https://github.com/MasterOfTheTiger)
 
 
 ## License
