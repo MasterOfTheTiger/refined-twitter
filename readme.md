@@ -1,3 +1,10 @@
+# Reimagined Twitter (Refined Twitter for Firefox)
+> Browser extension that simplifies the Twitter interface and adds useful features for Firefox
+
+This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project is simply a name change from Reimagined Twitter and is a Firefox Addon.
+
+If you use any browser but Firefox, refer [here](https://github.com/sindresorhus/refined-twitter)
+
 # <img src="source/icon.png" width="45" align="left">Refined Twitter
 
 > Browser extension that simplifies the Twitter interface and adds useful features

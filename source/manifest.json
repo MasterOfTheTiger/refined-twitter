@@ -1,8 +1,8 @@
 {
-	"name": "Refined Twitter",
-	"version": "0.0.0",
+	"name": "Reimagined Twitter",
+	"version": "2.0",
 	"description": "Simplifies the Twitter interface and adds useful features",
-	"homepage_url": "https://github.com/sindresorhus/refined-twitter",
+	"homepage_url": "https://github.com/MasterOfTheTiger/reimagine-twitter",
 	"manifest_version": 2,
 	"minimum_chrome_version": "62",
 	"permissions": [
