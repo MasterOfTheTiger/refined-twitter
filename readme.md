@@ -3,6 +3,8 @@
 
 This project is forked from [Refined Twitter](https://github.com/sindresorhus/refined-twitter). This project is simply a name change from Reimagined Twitter and is a Firefox Addon.
 
+Get the extension [from AMO](https://addons.mozilla.org/en-US/firefox/addon/reimagined-twitter/).
+
 If you use any browser but Firefox, refer [here](https://github.com/sindresorhus/refined-twitter)
 
 # <img src="source/icon.png" width="45" align="left">Refined Twitter
