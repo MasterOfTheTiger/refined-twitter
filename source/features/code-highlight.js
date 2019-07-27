@@ -38,19 +38,16 @@ function highlightCode(md) {
 		return (
 			<pre class="refined-twitter_highlight language-txt">
 				<code class="language-txt">
-					{code}
+					{code.trim()}
 				</code>
 			</pre>
 		);
 	}
 
-	const highlightedCode = prism.highlight(code, prism.languages[selectedLang]);
+	const highlightedCode = prism.highlight(code.trim(), prism.languages[selectedLang]);
 
 	return (
 		<div class="refined-twitter_highlight">
-			<div class="refined-twitter_highlight-lang">
-				{selectedLang}
-			</div>
 			<pre class={`language-${selectedLang}`}>
 				<code class={`language-${selectedLang}`}>
 					{domify(highlightedCode)}
@@ -59,6 +56,7 @@ function highlightCode(md) {
 		</div>
 	);
 }
+
 function splitTextReducer(frag, text, index) {
 	if (index % 2) { // Code is always in odd positions
 		frag.append(highlightCode(text));
@@ -77,6 +75,7 @@ export default function () {
 		if (tweetWithCode.length === 1) {
 			return;
 		}
+
 		const frag = tweetWithCode.reduce(splitTextReducer, new DocumentFragment());
 		$(el).html(frag);
 	});
